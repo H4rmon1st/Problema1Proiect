@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace problema_1_proiect.Models
+namespace Problema1Proiect.Models
 {
-    internal class Cow
+    public class Cow : Animal
     {
+        public override string Type => "Cow";
+
+        public override string MakeSound()
+        {
+            return "Moo!";
+        }
     }
 }
